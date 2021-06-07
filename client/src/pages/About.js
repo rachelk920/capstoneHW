@@ -1,11 +1,11 @@
 import React from 'react';
 import '../styles/About.css'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
   
-AOS.init({
-    duration: 1200,
-  })
+// AOS.init({
+//     duration: 1200,
+//   })
 
 const About = () => {
     return (
@@ -20,7 +20,7 @@ const About = () => {
           <h2>WHATEVER NAME YOU KNOW US BY, THERE'S ONLY ONE CINCINNATI</h2>
       </div>
           <div className='aboutblurb'>
-          <div class="item" data-aos="fade-up">1</div>
+          {/* <div class="item" data-aos="fade-up">1</div>
 <div class="item" data-aos="fade-down">2</div>
 <div class="item" data-aos="fade-right">3</div>
 <div class="item" data-aos="fade-left">4</div>
@@ -33,7 +33,7 @@ const About = () => {
 <div class="item" data-aos="flip-up">8</div>
 <div class="item" data-aos="flip-down">9</div>
 <div class="item" data-aos="flip-right">10</div>
-<div class="item" data-aos="flip-left">11</div>
+<div class="item" data-aos="flip-left">11</div> */}
 
           </div>
         </div>
