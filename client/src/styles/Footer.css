@@ -2,6 +2,9 @@
     padding: 0 !important;
     color: #E9ECEF;
     margin: 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+   
 }
 #profileContainer{
     width: 100%;
@@ -11,6 +14,14 @@
 
 #profileContainer.row {
     padding-top: 30px;
+    width: 100%;
+    margin: 0!important;
+}
+#icons{
+    width: 100px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
 }
 
 .footericon {
@@ -23,7 +34,6 @@
 
 .centericons {
     justify-content: center;
-    text-align: center;
 }
 
 .footercopyw {
