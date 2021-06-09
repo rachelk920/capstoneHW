@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+ import { Link } from 'react-router-dom';
 import axios from 'axios';
-// import Card from 'react-bootstrap/Card';
+import Card from 'react-bootstrap/Card';
 import {BACKEND_URL} from '../config'
 import '../styles/Attractions.css'
+import { Db } from 'mongodb';
 
 
 const Attraction = (props) => {
@@ -11,16 +12,13 @@ const Attraction = (props) => {
         <div className='allAttractions'>
             <div className='attractionsCard'>
                 <div className='cardImage'>
-                    <img className='attractionImage'src={props.attraction.imageURL} alt='attraction' />
+                    <img className='attractionImage' src={props.attraction.imageURL} alt='attraction' />
                 </div>
                 <div>
-                    <div className='text-name'>{props.attraction.name}</div>
-                    <div className='text-link'>
-                        <Link className='link-details' Link to={"attractions/" + props.attraction._id}>Details</Link>
-                    </div>
-                    <div className='website'>
-                        <a className='link-site' href={props.attraction.website} target="_blank" rel="noreferrer">Website</a>
-                    </div>
+                    <div className='attractionTitle'>{props.attraction.title}</div>
+                    <div className='attractionDescription'>{props.attraction.description}</div>
+                    <div className='attractionLocation'>{props.attraction.location}</div>
+                    <a className='attractionWeb' href={props.attraction.website} target="_blank" rel="noreferrer">Visit</a>
                 </div>
             </div>
         </div>
@@ -32,14 +30,17 @@ export default class Attractions extends Component {
         super(props)
         this.state = {
             attractions:[],
+            restaurants:[],
             loading: true
         };
     }
     componentDidMount() {
         axios.get(BACKEND_URL + 'attractions/')
+        axios.get(BACKEND_URL + 'restaurants/')
         .then(response => {
             this.setState({
                 attractions: response.data,
+                restaurants:response.data,
                 loading: false
             })
             console.log('this is the list of attractions')
@@ -48,17 +49,12 @@ export default class Attractions extends Component {
             console.log(error)
         });
     }
-//    SList() {
-//         return this.state.attractions.map((currentAttraction) => {
-//             return <Attraction attraction = {currentAttraction} key={currentAttraction._id} />
-//         })
-//     }
 
     SportsList() {
         return this.state.attractions.map((currentAttraction) => {
-            return <Attraction attraction = {currentAttraction} key={currentAttraction._id} />
+           return <Attraction attraction = {currentAttraction} key={currentAttraction._id} />
         })
-    }
+   }
     CasinosList() {
         return this.state.attractions.map((currentAttraction) => {
             return <Attraction attraction = {currentAttraction} key={currentAttraction._id} />
@@ -85,7 +81,7 @@ export default class Attractions extends Component {
         })
     }
    RestaurantsList() {
-        return this.state.attractions.map((currentAttraction) => {
+        return this.state.restaurants.map((currentAttraction) => {
             return <Attraction attraction = {currentAttraction} key={currentAttraction._id} />
         })
     }
@@ -156,8 +152,8 @@ export default class Attractions extends Component {
                         {this.MuseumList()}
                     </div>  </div>
 
-                    <div className='RestaurantsContainer' id='Restaurants'>
-                    <h2 className='RestaurantsHeader'>Restaurants</h2>
+                    <div className='RestaurantsContainer' >
+                    <h2 className='RestaurantsHeader' id='Restaurants'>Restaurants</h2>
                     <div className='RestaurantsInnerContainer'>
                         {this.RestaurantsList()}
                     </div>  </div>
