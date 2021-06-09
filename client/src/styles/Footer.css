@@ -4,18 +4,27 @@
     margin: 0;
     margin-left: 0 !important;
     margin-right: 0 !important;
+<<<<<<< HEAD
    
+=======
+>>>>>>> afecd13ef6b4647c8e4c0d472a6ba15da35ae7ed
 }
-#profileContainer{
+#footerContainer{
     width: 100%;
    margin: 0!important;
     background-color: #212529;
+
 }
 
-#profileContainer.row {
+#footerContainer.row {
     padding-top: 30px;
     width: 100%;
+<<<<<<< HEAD
     margin: 0!important;
+=======
+    /* margin: 0!important; */
+    margin-top: 100px;
+>>>>>>> afecd13ef6b4647c8e4c0d472a6ba15da35ae7ed
 }
 #icons{
     width: 100px;

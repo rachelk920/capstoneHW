@@ -60,9 +60,11 @@
 .btn {
     font-family: 'Oswald';
     text-shadow: 1px 1px 2px #CED4DA;
-    font-size: 21px;
+    font-size: 21px !important;
+    background-color: #E9ECEF !important;
 }
 
+<<<<<<< HEAD
 .aboutheader h1 {
     font-family: 'Kaushan Script';
     text-align: center;
@@ -73,6 +75,27 @@
     text-align: center;
     padding-bottom: 50px;
 }
+=======
+@media (max-width: 800px) {
+    .jumbotron h1 {
+      font-size: 2em;
+    }
+    .contacthover {
+      background-size: cover;
+      max-height: 100px;
+      max-width: 100%;
+      /* filter: none; */
+    }
+
+    .contactheader h1{
+      font-size: 20px;
+    }
+
+    .contactheader h2{
+      font-size: 20px;
+    }
+  }
+>>>>>>> afecd13ef6b4647c8e4c0d472a6ba15da35ae7ed
 
 .contact-form {
     /* display: flex;
