@@ -64,18 +64,6 @@
     background-color: #E9ECEF !important;
 }
 
-<<<<<<< HEAD
-.aboutheader h1 {
-    font-family: 'Kaushan Script';
-    text-align: center;
-    padding-top: 50px;
-}
-.aboutheader h2 {
-    padding-top: 25px;
-    text-align: center;
-    padding-bottom: 50px;
-}
-=======
 @media (max-width: 800px) {
     .jumbotron h1 {
       font-size: 2em;
@@ -95,7 +83,6 @@
       font-size: 20px;
     }
   }
->>>>>>> afecd13ef6b4647c8e4c0d472a6ba15da35ae7ed
 
 .contact-form {
     /* display: flex;

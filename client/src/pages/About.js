@@ -12,11 +12,7 @@ const About = () => {
       <div className = 'home'>
       <div className="jumbotron jumbotron-fluid abouthover">
           <div className="aboutcontainer">
-<<<<<<< HEAD
-          <h1>Cincinnati <span className = 'aboutsecond'>(/ˌsɪnsɪˈnæti/ SIN-sih-NAT-ee)</span> </h1>
-=======
               <h1>Cincinnati <span className = 'aboutsecond'>(/ˌsɪnsɪˈnæti/ SIN-sih-NAT-ee)</span> </h1>
->>>>>>> afecd13ef6b4647c8e4c0d472a6ba15da35ae7ed
           </div>
       </div>
       <div className='aboutheader'>
@@ -31,11 +27,7 @@ const About = () => {
 
 <div class="item" data-aos="zoom-in">...and the "Least Metal Moment" of all time happened at Zinzinnati in the early '00s when Mötley Crüe’s Vince Neil led the crowd in the “World’s Largest Chicken Dance” on Fountain Square</div>
 <div class="item" data-aos="zoom-out">Two Cincinnatians created the Magic 8-Ball</div>
-<<<<<<< HEAD
-<div class="item" data-aos="slide-up">The first newspaper printed in the Northwest Territory was published in Cincinnati from 1793 weekly until 1796</div>
-=======
 <div class="item" data-aos="slide-up">The first newspaper printed in the Northwest Territory was published in Cincinnati from 1793 until 1796</div>
->>>>>>> afecd13ef6b4647c8e4c0d472a6ba15da35ae7ed
 <div class="item" data-aos="flip-up">Cincinnati chili is the best chili</div>
 <div class="item" data-aos="flip-down">The inventor of the Pringles can is burried here...in a Pringles can</div>
 <div class="item" data-aos="flip-right">We have the best zoo in the nation</div>
