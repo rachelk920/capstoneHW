@@ -14,9 +14,23 @@
 }
 
 .footericon {
-   margin-bottom: 7px;
+   float: left;
+   text-align: center;
+    vertical-align: top;
+    padding: 5px;
+    justify-content: center;
 }
 
-#footerprofile ul li {
-    float: left;
+.centericons {
+    justify-content: center;
+    text-align: center;
+}
+
+.footercopyw {
+    background-color: #212529;
+}
+
+.footerName {
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px #495057;
 }
