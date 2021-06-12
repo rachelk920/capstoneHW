@@ -25,7 +25,7 @@ code {
     left: 0;
     background-color: #111;
     overflow-x: hidden;
-    padding-top: 50px;
+    padding-top: 30px;
     text-decoration: none;
     background: #495057;
     
@@ -42,7 +42,7 @@ code {
       text-decoration: none;
       list-style: none;
       font-size: 20px;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
   }
 
   .sidenav a {
@@ -143,6 +143,9 @@ code {
   body {
     margin-left: 100px;
     margin-right: 0px !important;
+  }
+  .dropdown-content .dropdowna{
+    font-size: 10px;
   }
 }
 
