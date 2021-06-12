@@ -396,11 +396,16 @@
       font-size: 20px;
     }
 
-    .card-img-top {
+    .container.card {
+        width: 18em !important;
+        height: 18em !important;
+        margin-bottom: 300px;
         filter: none;
     }
-
-    .card {
-        size: 1em;
+    .card-text {
+        font-size: 12px;
+    }
+    .card-img-top {
+        filter: none;
     }
   }

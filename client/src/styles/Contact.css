@@ -81,6 +81,13 @@
     .contactheader h2{
       font-size: 20px;
     }
+    .form-group {
+        width: 1em !important;
+
+    }
+    .form-controll {
+        width: 1em !important;
+    }
   }
 
 .contact-form {
